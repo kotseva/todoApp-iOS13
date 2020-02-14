@@ -15,6 +15,7 @@
 		2F2C78AD23E356EB007B296F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F2C78AB23E356EB007B296F /* LaunchScreen.storyboard */; };
 		2F2C78B823E356EB007B296F /* todoApp_iOS13Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2C78B723E356EB007B296F /* todoApp_iOS13Tests.swift */; };
 		2F2C78C323E356EB007B296F /* todoApp_iOS13UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2C78C223E356EB007B296F /* todoApp_iOS13UITests.swift */; };
+		2FB9F5D023F73B83003A7233 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB9F5CF23F73B83003A7233 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		2F2C78BE23E356EB007B296F /* todoApp-iOS13UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "todoApp-iOS13UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F2C78C223E356EB007B296F /* todoApp_iOS13UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todoApp_iOS13UITests.swift; sourceTree = "<group>"; };
 		2F2C78C423E356EB007B296F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FB9F5CF23F73B83003A7233 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,11 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				2F2C78A023E356E6007B296F /* AppDelegate.swift */,
-				2F2C78A223E356E6007B296F /* SceneDelegate.swift */,
-				2F2C78A423E356E6007B296F /* TodoListViewController.swift */,
-				2F2C78A623E356E6007B296F /* Main.storyboard */,
-				2F2C78A923E356EB007B296F /* Assets.xcassets */,
-				2F2C78AB23E356EB007B296F /* LaunchScreen.storyboard */,
+				2FB9F5D423F73BEE003A7233 /* Controllers */,
+				2FB9F5D223F73BA3003A7233 /* Views */,
+				2FB9F5D323F73BC1003A7233 /* Supporting Files */,
+				2FB9F5D123F73B97003A7233 /* DataModel */,
 				2F2C78AE23E356EB007B296F /* Info.plist */,
 			);
 			path = "todoApp-iOS13";
@@ -126,6 +127,40 @@
 				2F2C78C423E356EB007B296F /* Info.plist */,
 			);
 			path = "todoApp-iOS13UITests";
+			sourceTree = "<group>";
+		};
+		2FB9F5D123F73B97003A7233 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				2FB9F5CF23F73B83003A7233 /* Item.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		2FB9F5D223F73BA3003A7233 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2F2C78A623E356E6007B296F /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2FB9F5D323F73BC1003A7233 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F2C78A223E356E6007B296F /* SceneDelegate.swift */,
+				2F2C78A923E356EB007B296F /* Assets.xcassets */,
+				2F2C78AB23E356EB007B296F /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2FB9F5D423F73BEE003A7233 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2F2C78A423E356E6007B296F /* TodoListViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FB9F5D023F73B83003A7233 /* Item.swift in Sources */,
 				2F2C78A523E356E6007B296F /* TodoListViewController.swift in Sources */,
 				2F2C78A123E356E6007B296F /* AppDelegate.swift in Sources */,
 				2F2C78A323E356E6007B296F /* SceneDelegate.swift in Sources */,
